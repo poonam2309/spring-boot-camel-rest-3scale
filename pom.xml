@@ -120,7 +120,13 @@
 
   <build>
     <defaultGoal>spring-boot:run</defaultGoal>
-
+     <repositories>
+    <repository>
+      <id>redhat-ga</id>
+      <name>Redhat GA Repository</name>
+      <url>https://maven.repository.redhat.com/ga/</url>
+     </repository>
+  </repositories>
     <plugins>
       <!-- Compiler plugin enforces Java 1.8 compatibility -->
       <plugin>
